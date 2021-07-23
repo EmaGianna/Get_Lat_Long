@@ -62,8 +62,8 @@ if __name__ == '__main__':
         column = dataframe.columns.tolist()                  
         list_place = dataframe[column[0]].unique().tolist()    #List of Values
         st.header('Latitude and Longitude of Places\n')
-        st.write(get_data_latlon(list_place,'PORT'))
-        df = get_data_latlon(list_place,'PORT')
+        st.write(get_data_latlon(list_place,'DATA'))
+        df = get_data_latlon(list_place,'DATA')
         st.header('Map Places(Please verify)\n')
         get_show_map(df)
         st.header('Download File with the points\n')
